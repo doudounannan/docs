@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "jsdoc2md": "",
-    "jsdoc": "jsdoc src/js/index.js",
-    "clean": "rm -rf out"
+    "jsdoc2md": "jsdoc2md --files src/js/**/*.js > docs/api.md",
+    "jsdoc": "jsdoc src/js/ -r -d jsdoc_out/",
+    "apidoc": "apidoc -i src/js/ -o apidoc_out/ --debug",
+    "clean": "rimraf jsdoc_out apidoc_out"
   },
-  "keywords": [],
+  "keywords": [
+    "jsdoc",
+    "jsdoc-to-markdown",
+    "gitbook",
+    "apidoc"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,6 +23,7 @@
     "gitbook-cli": "^2.3.2",
     "gulp": "^3.9.1",
     "jsdoc": "^3.5.5",
-    "jsdoc-to-markdown": "^4.0.1"
+    "jsdoc-to-markdown": "^4.0.1",
+    "rimraf": "^2.6.2"
   }
 }

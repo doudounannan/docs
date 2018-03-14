@@ -1,0 +1,20 @@
+{
+  "name": "User API Document",
+  "version": "0.0.1",
+  "description": "A sample of User API document generated from apiDoc",
+  "title": "User API",
+  "url" : "http://localhost:5000",
+  "sampleUrl": "http://localhost:5000",
+  "header": {
+    "title": "Overview",
+    "filename": "third_party/apidoc_template/header.md"
+  },
+  "footer": {
+    "title": "Copyright",
+    "filename": "third_party/apidoc_template/footer.md"
+  },
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
